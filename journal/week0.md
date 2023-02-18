@@ -30,7 +30,7 @@ Created conceptual architectural diagram for the application - to communicate at
 Recreated the logical architectural diagram of the application - to communicate the broad strokes of the technical architecture to engineers.
 To view the logical diagram in Lucidcharts [Click here](https://lucid.app/lucidchart/f57f0694-087c-4c82-9f14-afce5e294007/edit?viewport_loc=-220%2C106%2C3328%2C1582%2C0_0&invitationId=inv_caf2c24f-af28-4d89-bef8-d7e35d6ccca8)
 
-![Logical Diagram](../_docs/assets/architectural-diagram.png)
+![Logical Diagram](../_docs/assets/architectural-diagram.jpg)
 
 ---
 
