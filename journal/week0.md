@@ -132,3 +132,8 @@ git push
     - Credits - used to redeem AWS credits
 3. AWS Pricing Calculator
 4. AWS Organizations
+
+---
+
+## AWS Cloud Project Bootcamp - Youtube Playlist
+[:o: FREE AWS Cloud Project Bootcamp - Week-0 - Training videos](https://www.youtube.com/playlist?list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv)
