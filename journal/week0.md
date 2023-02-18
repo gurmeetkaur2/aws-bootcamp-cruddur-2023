@@ -132,8 +132,19 @@ git push
     - Credits - used to redeem AWS credits
 3. AWS Pricing Calculator
 4. AWS Organizations
+5. AWS Well-Architected tool
 
 ---
 
-## AWS Cloud Project Bootcamp - Youtube Playlist
-[:o: FREE AWS Cloud Project Bootcamp - Week-0 - Training videos](https://www.youtube.com/playlist?list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv)
+## AWS Cloud Project Bootcamp - Training Video Links
+[:o: FREE AWS Cloud Project Bootcamp - Week-0 - Complete Playlist](https://www.youtube.com/playlist?list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv)
+
+1. [Week 0 - Live Streamed Video](https://www.youtube.com/watch?v=SG8blanhAOg&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=12)
+
+2. [Chirag's Week 0 - Spend Considerations](https://www.youtube.com/watch?v=OVw3RrlP-sI&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=13)
+
+3. [Ashish's Week 0 - Security Considerations](https://www.youtube.com/watch?v=4EMWBYVggQI&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=15)
+
+4. [Recreate Conceptual Diagram in Lucid Charts or on a Napkin](https://www.youtube.com/watch?v=K6FDrI_tz0k&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=17)
+
+5. [Week 0 - Generate Credentials, AWS CLI, Budget and Billing Alarm via CLI](https://www.youtube.com/watch?v=OdUnNuKylHg&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=14)
