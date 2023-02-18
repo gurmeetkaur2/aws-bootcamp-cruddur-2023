@@ -7,7 +7,7 @@
     ],
     "EvaluationPeriods": 1,
     "DatapointsToAlarm": 1,
-    "Threshold": 50,
+    "Threshold": 1,
     "ComparisonOperator": "GreaterThanOrEqualToThreshold",
     "TreatMissingData": "breaching",
     "Metrics": [{
