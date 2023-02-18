@@ -24,14 +24,14 @@
 ## Task 1 - Conceptual Diagram (Napkin Design)
 Created conceptual architectural diagram for the application - to communicate at a high level the architecture to key stakeholders.
 
-![Conceptual Diagram](../_docs/assets/napkin-design.jpg)
+![Conceptual Diagram](./assets/napkin-design.jpg)
 
 ## Task 2 - Logical Architectural Diagram 
 Recreated the logical architectural diagram of the application - to communicate the broad strokes of the technical architecture to engineers.
 
 The link to Lucidcharts diagram file is - https://lucid.app/lucidchart/f57f0694-087c-4c82-9f14-afce5e294007/edit?viewport_loc=-220%2C106%2C3328%2C1582%2C0_0&invitationId=inv_caf2c24f-af28-4d89-bef8-d7e35d6ccca8
 
-![Logical Diagram](../_docs/assets/architectural-diagram.png)
+![Logical Diagram](./assets/architectural-diagram.png)
 
 ---
 
@@ -72,6 +72,8 @@ These saved variables may be seen here - https://gitpod.io/user/variables or may
 
 ---
 
+![IAM-User](./assets/IAM-user.png)
+
 ## Task 4 - Create a Budget using AWS CLI 
 Created a [Cost and Usage Budget](https://docs.aws.amazon.com/cli/latest/reference/budgets/create-budget.html#examples) using the AWS CLI commands.
 
@@ -84,7 +86,7 @@ aws budgets create-budget \
     --notifications-with-subscribers file://budget-notifications-with-subscribers.json
 ```
 
-![My-AWS-Budget](../_docs/assets/aws-budget.png)
+![My-AWS-Budget](./assets/aws-budget.png)
 
 ---
 
@@ -103,7 +105,7 @@ aws sns subscribe \
 **More details may be found here** - [Setting up Amazon SNS notifications](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/US_SetupSNS.html)
 
 
-![My-Billing-Alarm](../_docs/assets/billing-alarm.png)
+![My-Billing-Alarm](./assets/billing-alarm.png)
 
 `aws cloudwatch put-metric-alarm --cli-input-json file://aws/json/alarm-config.json`
 
