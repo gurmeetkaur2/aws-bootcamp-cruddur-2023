@@ -20,7 +20,7 @@ export default function HomeFeedPage() {
 
   const loadData = async () => {
     try {
-      const backend_url = `${process.env.REACT_APP_BACKEND_URL}/api/activities/notifiactions`
+      const backend_url = `${process.env.REACT_APP_BACKEND_URL}/api/activities/notifications`
       const res = await fetch(backend_url, {
         method: "GET"
       });
@@ -57,7 +57,7 @@ export default function HomeFeedPage() {
 
   return (
     <article>
-      <DesktopNavigation user={user} active={'home'} setPopped={setPopped} />
+      <DesktopNavigation user={user} active={'notifications'} setPopped={setPopped} />
       <div className='content'>
         <ActivityForm  
           popped={popped}
@@ -72,7 +72,7 @@ export default function HomeFeedPage() {
           activities={activities} 
         />
         <ActivityFeed 
-          title="Home" 
+          title="Notifications" 
           setReplyActivity={setReplyActivity} 
           setPopped={setPoppedReply} 
           activities={activities} 

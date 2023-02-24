@@ -22,7 +22,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/notifications",
-    element: <NotificationsFeedPage  />
+    element: <NotificationsFeedPage />
   },
   {
     path: "/@:handle",
