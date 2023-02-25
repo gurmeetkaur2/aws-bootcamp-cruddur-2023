@@ -120,4 +120,5 @@ def data_activities_reply(activity_uuid):
   return
 
 if __name__ == "__main__":
-  app.run(debug=True)
+  # app.run(debug=True)
+  app.run(debug=True, host='0.0.0.0', port=4567)
