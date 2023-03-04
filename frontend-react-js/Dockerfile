@@ -1,22 +1,20 @@
 # build stage
-FROM node:16.18 as build
+FROM node:16.18 as builder
 WORKDIR /frontend-react-js
-COPY . /frontend-react-js
+COPY package*.json ./
 RUN npm install
 COPY . .
 RUN npm run build
 
-# development stage
-FROM build as development
+FROM node:alpine
 WORKDIR /frontend-react-js
-COPY --from=build /frontend-react-js/build /frontend-react-js/build
-RUN npm install
-RUN npm i
+COPY --from=builder /frontend-react-js/build ./build
 
 ENV PORT=3000
 EXPOSE ${PORT}
 
 # Healthcheck
 HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
-    CMD curl --fail http://localhost:3000/ || exit 1
+    CMD wget -qO- http://localhost:$PORT/ || exit 1
+
 CMD ["npm", "start"]
