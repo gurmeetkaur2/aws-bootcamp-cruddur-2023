@@ -1,4 +1,8 @@
 from datetime import datetime, timedelta, timezone
+from aws_xray_sdk.core import xray_recorder
+from aws_xray_sdk.core import patch_all
+from aws_xray_sdk.ext.flask.middleware import XRayMiddleware
+
 class UserActivities:
   def run(user_handle):
     model = {
@@ -20,4 +24,16 @@ class UserActivities:
         'expires_at': (now + timedelta(days=31)).isoformat()
       }]
       model['data'] = results
+    
+    subsegment = xray_recorder.begin_subsegment('mock-data')
+    # xray ---
+    dict = {
+      "now": now.isoformat(),
+      "results-size": len(model['data'])
+    }
+    subsegment.put_metadata('key', dict, 'namespace')
+    #finally:  
+    # Close the segment
+    #xray_recorder.end_subsegment()
+    
     return model
