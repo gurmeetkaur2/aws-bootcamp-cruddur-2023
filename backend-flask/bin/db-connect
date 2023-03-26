@@ -1,10 +1,9 @@
 #! /usr/bin/bash
 
 if [ "$1" = "prod" ]; then
-  echo "Running in production mode"
-  URL=$PROD_CONNECTION_URL
+  echo "running in production mode"
+  CON_URL=$PROD_CONNECTION_URL
 else
-  URL=$CONNECTION_URL
+  CON_URL=$CONNECTION_URL
 fi
-
-psql $URL
+psql $CON_URL
